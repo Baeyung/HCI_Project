@@ -5,3 +5,5 @@ and to create a digital system for the stake holders keeping in mind about their
 The first milestone was to do user analysis, task analysis, and domain analysis
 # Milestone 2
 The second milestone was about creating the persona's, making wireframes in different manner and then analyzing and creating story boarding for the wire frames
+# Milestone 3
+In second Milestone we created high fidelity prototype that is Interactive and user can perform actions. It is not the exact replica of the final product but somewhat similar.

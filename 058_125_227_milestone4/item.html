@@ -1,46 +1,41 @@
 <html>
-
-<head>
-    <title>GIKI Food Ordering System</title>
-    <link rel="stylesheet" href="item.css">
-    <script src="main.js"></script>
-</head>
-
-<body onload="set_item_page()">
-    <div class="header">
-        <div class="name-area">
-            <a href="main.html">
-                <img src="back.png" width="58" , height="58">
-            </a>
-            <h1 id="food-name">Food Item</h1>
+    <head>
+        <title>GIKI Food Ordering System</title>
+        <link rel="stylesheet" href="item.css">
+        <script src="main.js"></script>
+    </head>
+    <body onload="set_item_page()">
+        <div class="header">
+            <div class="name-area">
+                <a href="main.html" ><img src="back.png" width="58" , height="58"></a>
+                <h1 id="food-name">Food Item</h1>
+            </div>
+            <div class="title-area">
+                <h2>Food Ordering System</h2>
+            </div>
         </div>
-        <div class="title-area">
-            <h2>Food Ordering System</h2>
+        <div class="description">
+            <p id="food-desc">Food Item Description Placeholder</p>
         </div>
-    </div>
-    <div class="description">
-        <p id="food-desc">Food Item Description Placeholder</p>
-    </div>
-    <div class="instructions">
-        <H3>Special Instructions</H3>
-        <input type="text" placeholder="Type Here">
-    </div>
-    <div class="controls">
-        <div class="button-group">
-            <button id="minus" onclick="decrement()">-</button>
-            <p>Quantity</p>
-            <button id="plus" onclick="increment()">+</button>
+        <div class="instructions">
+            <H3>Special Instructions</H3>
+            <input type="text" placeholder="Type Here">
         </div>
-        <input id=demoInput type=number min=0 max=100>
-        <div class="radio-div">
-            <form>
-                <label class="block"><input type="radio" name="option" value="Half">Half</label>
-                <label class="block"><input type="radio" name="option" value="Full">Full</label>
-            </form>
+        <div class="controls">
+            <div class="button-group">
+                <button id="minus" onclick="decrement()">-</button>
+                <p>Quantity</p>
+                <button id="plus"onclick="increment()">+</button>
+            </div>
+            <input id=demoInput type=number min=1 max=100 value="1">
+            <div class="radio-div">
+                <form id="quant">
+                    <label class="block"><input type="radio" name="option" value="Half">Half</label>
+                    <label class="block"><input type="radio" name="option" value="Full">Full</label>
+                </form>
+            </div>
+            <div><button id="checkout-button" type="button" onclick="add_to_cart()">Add to Cart</button></div>
+            
         </div>
-        <div><button id="checkout-button" type="button">Checkout</button></div>
-
-    </div>
-</body>
-
+    </body>
 </html>

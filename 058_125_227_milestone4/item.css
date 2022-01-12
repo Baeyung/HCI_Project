@@ -54,6 +54,7 @@
     background: #F4EEEE;
     border: 1px solid black;
     float: left;
+    text-align: center;
 }
 
 .button-group{
@@ -99,6 +100,11 @@
     width: 190px;
     border: 1px solid black;
     margin-left: 100px;
+    touch-action: manipulation;
+}
+
+#checkout-button:hover{
+    background-color: rgb(121, 114, 114, 20);
 }
 
 .name-area{
